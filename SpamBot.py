@@ -1,8 +1,8 @@
-//Import necessary things
+/Import necessary things
 from pynput.keyboard import Key, Controller
 import time
 
-//Setting up variables
+/Setting up variables
 keyboard = Controller()
 t = True
 msg = input("What do you want to be spammed?     ")
@@ -10,7 +10,7 @@ print("How long do you want between each message?")
 s = input("(If it is less than a second, lay out as a float(e.g. .1, .2, .3, etc.))     ")
 time.sleep(5)
 
-//Spamming
+/Spamming
 while t == True:
     time.sleep(int(float(s)))
     keyboard.type(msg)
